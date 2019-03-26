@@ -1,0 +1,227 @@
+.hidden
+{
+	display: none;
+}
+body
+{
+
+}
+header
+{
+	background: black;
+	background-position: center;
+	background-size: cover;
+	min-height: 300px;
+}
+
+a,h1,h2,h3,h4,li,p
+{
+	text-decoration: none;
+	text-align: center;
+}
+
+
+.top
+{
+	display: flex;
+	justify-content: space-between;
+	padding: 2%;
+	align-items: center;
+}
+
+.logo
+{
+	width: 50px;
+	height: 50px;
+	background: #464646;
+	
+}
+
+
+.menu
+{
+	display: flex;
+	flex-direction: column;
+}
+.menu span
+{
+	margin: 2px;
+	padding: 3px 20px;
+	background: white;
+	border-radius: 10px;
+}
+
+.promo
+{
+	margin-top: 80px;
+	display: flex; 
+	align-items: center;
+
+	
+}
+.promo h3
+{
+	padding-right: 5%;
+	font-size: 5vw;
+	text-align: right;
+	position: relative;
+	left: 11vw;
+	font-weight: 800;
+}
+.promo span
+{
+	background: white;
+	padding: 10% 1px;
+	position: relative;
+	left: 50vw;
+}
+.promo p
+{
+	font-size: 2vw;
+	flex-wrap: wrap;
+	padding-left: 5%;
+	position: relative;
+	left: 5vw;
+	font-weight: 200;
+}
+
+
+
+.paddingSection
+{
+	padding: 20px;
+	
+}
+
+.promoText h1
+{
+	color: #2BD094;
+	font-size: 30px;
+	margin: 20px 0;
+	text-align: left;
+}
+
+
+.boxes
+	{
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
+	}
+
+.box
+{
+	margin: 0 auto;
+	height: 100px;
+	flex: 1 1 300px;
+	background: blue;
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	flex-wrap: wrap;
+	max-width: 300px;
+}
+
+.bigBox
+{
+	height: 300px;
+	flex: 1 1 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.events
+{
+
+	background: red;
+}
+
+.projects
+{
+	background: green;
+}
+
+.shop
+{
+	/*overflow: hidden;*/
+}
+.productSection
+{
+	display: flex;
+	position: relative;
+}
+
+.product
+{
+	height: 500px;
+	background: blue;
+	min-width: 300px; 
+	flex: 1 1 auto;
+	margin: 20px;
+}
+
+.partnerIcon
+{
+	background: red;
+}
+
+footer
+{
+	background: #000F0A;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 40px;
+}
+
+nav li
+{
+	padding: 20px;
+	font-size: 20px;
+}
+
+.socialMedia
+{
+	height: 100px;
+	width: 100px;
+	background: white;
+}
+
+.copyRight
+{
+	margin: 20px;
+}
+
+.copyRight h2
+{
+	font-weight: normal;
+}
+.copyRight p
+{
+	margin: 20px;
+	font-size: 10px;
+	line-height: 15px;
+}
+
+@media screen and (min-width: 600px) {
+	header
+	{
+		height: 800px;
+	}
+
+	.bigBox
+	{
+		height: 600px;
+	}
+	.promo
+	{
+		margin-top: 120px;
+	}
+	
+	
+
+}
