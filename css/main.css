@@ -138,7 +138,7 @@ a,h1,h2,h3,h4,li,p
 	margin: 0 auto;
 	height: 150px;
 	flex: 1 1 300px;
-	background: blue;
+	background: #0086ce;
 	margin: 20px;
 	display: flex;
 	justify-content: center;
@@ -160,12 +160,12 @@ a,h1,h2,h3,h4,li,p
 .events
 {
 
-	background: red;
+	background: #ffae38;
 }
 
 .projects
 {
-	background: green;
+	background: #27a09e;
 }
 
 
@@ -179,7 +179,7 @@ a,h1,h2,h3,h4,li,p
 .product
 {
 	height: 500px;
-	background: blue;
+	background: #46b2c3;
 	min-width: 300px; 
 	flex: 1 1 auto;
 	margin: 20px;
@@ -192,7 +192,7 @@ a,h1,h2,h3,h4,li,p
 {
 	height: 100px;
 	max-width: 200px;
-	background: red;
+	background: #ffae38;
 }
 
 footer
