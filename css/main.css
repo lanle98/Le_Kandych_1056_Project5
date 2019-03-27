@@ -8,7 +8,7 @@ body
 }
 header
 {
-	background: black;
+	background: #4A4A4A;
 	background-position: center;
 	background-size: cover;
 }
@@ -37,7 +37,7 @@ a,h1,h2,h3,h4,li,p
 {
 	width: 50px;
 	height: 50px;
-	background: #464646;
+	background: #000000;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -117,7 +117,7 @@ a,h1,h2,h3,h4,li,p
 
 .promoText h2
 {
-	color: #2BD094;
+	color: #4A4A4A;
 	font-size: 30px;
 	margin: 20px 0;
 	text-align: left;
@@ -138,7 +138,7 @@ a,h1,h2,h3,h4,li,p
 	margin: 0 auto;
 	height: 150px;
 	flex: 1 1 300px;
-	background: #0086ce;
+	background: #4A4A4A;
 	margin: 20px;
 	display: flex;
 	justify-content: center;
@@ -160,12 +160,13 @@ a,h1,h2,h3,h4,li,p
 .events
 {
 
-	background: #ffae38;
+	background: #4A4A4A;
+	margin-bottom: 10px;
 }
 
 .projects
 {
-	background: #27a09e;
+	background: #4A4A4A;
 }
 
 
@@ -179,7 +180,7 @@ a,h1,h2,h3,h4,li,p
 .product
 {
 	height: 500px;
-	background: #46b2c3;
+	background: #4A4A4A;
 	min-width: 300px; 
 	flex: 1 1 auto;
 	margin: 20px;
@@ -192,12 +193,12 @@ a,h1,h2,h3,h4,li,p
 {
 	height: 100px;
 	max-width: 200px;
-	background: #ffae38;
+	background: #4A4A4A;
 }
 
 footer
 {
-	background: #000F0A;
+	background: #9B9B9B;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
