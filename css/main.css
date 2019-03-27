@@ -1,0 +1,347 @@
+.hidden
+{
+	display: none;
+}
+body
+{
+
+}
+header
+{
+	background: black;
+	background-position: center;
+	background-size: cover;
+}
+
+a,h1,h2,h3,h4,li,p
+{
+	text-decoration: none;
+	text-align: center;
+}
+
+
+.top
+{
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.desktopNav
+{
+	display: none;
+}
+
+.logo
+{
+	width: 50px;
+	height: 50px;
+	background: #464646;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.donate
+{
+	display: none;
+}
+
+.menu
+{
+	display: flex;
+	flex-direction: column;
+}
+.menu span
+{
+	margin: 2px;
+	padding: 3px 20px;
+	background: white;
+	border-radius: 10px;
+}
+
+.promo
+{
+	display: flex; 
+	align-items: center;	
+}
+.promo h3
+{
+	padding-right: 5%;
+	font-size: 5vw;
+	text-align: right;
+	position: relative;
+	left: 10vw;
+	font-weight: 800;
+}
+.promo span
+{
+	background: white;
+	padding: 10vw 1px;
+	position: relative;
+	left: 49vw;
+}
+.promo p
+{
+	font-size: 2vw;
+	flex-wrap: wrap;
+	padding-left: 5%;
+	position: relative;
+	left: 4vw;
+	font-weight: 200;
+}
+
+.slider
+{
+	display: flex;
+	justify-content: center;
+
+}
+
+.slider span
+{
+	background: white;
+	border-radius: 100px;
+	width: 20px;
+	height: 20px;
+	margin: 40px 10px;
+}
+
+.paddingSection
+{
+	padding: 20px;
+	
+}
+
+.promoText h2
+{
+	color: #2BD094;
+	font-size: 30px;
+	margin: 20px 0;
+	text-align: left;
+}
+
+
+.boxes
+	{
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+.box
+{
+	margin: 0 auto;
+	height: 150px;
+	flex: 1 1 300px;
+	background: #0086ce;
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	flex-wrap: wrap;
+	max-width: 400px;
+}
+
+.bigBox
+{
+	height: 300px;
+	flex: 1 1 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.events
+{
+
+	background: #ffae38;
+}
+
+.projects
+{
+	background: #27a09e;
+}
+
+
+.productSection
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.product
+{
+	height: 500px;
+	background: #46b2c3;
+	min-width: 300px; 
+	flex: 1 1 auto;
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.partnerIcon
+{
+	height: 100px;
+	max-width: 200px;
+	background: #ffae38;
+}
+
+footer
+{
+	background: #000F0A;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 40px;
+}
+
+.footer
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+nav li
+{
+	padding: 20px;
+	font-size: 20px;
+}
+
+.socialMedia
+{
+	height: 100px;
+	width: 100px;
+	background: white;
+	margin: 0 auto;
+}
+
+.copyRight
+{
+	margin: 20px;
+}
+
+.copyRight h2
+{
+	font-weight: normal;
+}
+.copyRight p
+{
+	margin: 20px;
+	font-size: 10px;
+	line-height: 15px;
+}
+
+@media screen and (min-width: 800px) {
+	.logo
+	{
+		width: 100px;
+		height: 100px;
+	}
+	
+	.bigBox
+	{
+		height: 600px;
+	}
+	
+	nav ul
+	{
+		display: flex;
+	}
+	
+	nav li
+	{
+	padding: 30px;
+	}
+
+	.promoText h1
+	{
+		font-size: 40px;
+	}
+
+	.productSection
+	{
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.product
+	{
+		max-width: 400px;
+		height: 600px;
+	}
+
+}
+
+
+@media screen and (min-width: 1200px) {
+		
+		header
+		{
+			height: 100vh;
+		}
+
+		.desktopNav
+		{
+			display: flex;
+		}
+
+		.promo
+		{
+			
+			margin: 100px 0;
+		}
+		
+
+
+		.slider span
+		{
+			margin: 40px 20px;
+		}
+
+		.donate
+		{
+			display: block;
+			padding: 15px 40px;
+			border-radius: 100px;
+			background: linear-gradient(180deg, rgba(255,194,104,1) 0%, rgba(255,173,52,1) 100%);
+			color: white;
+		}
+
+		.menu
+		{
+			display: none;
+		}
+		
+		footer
+		{
+			display: block;
+			
+		}
+		.footer
+		{
+			flex-direction: row;
+			justify-content: space-between;
+			padding: 0 60px;
+		}
+
+	}
+
+
+@media screen and (min-width: 1500px) {
+	header
+	{
+		height: 100%;
+	}
+}
