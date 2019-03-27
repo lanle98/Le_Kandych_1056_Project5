@@ -11,7 +11,6 @@ header
 	background: black;
 	background-position: center;
 	background-size: cover;
-	min-height: 300px;
 }
 
 a,h1,h2,h3,h4,li,p
@@ -23,10 +22,15 @@ a,h1,h2,h3,h4,li,p
 
 .top
 {
+	padding: 20px;
 	display: flex;
 	justify-content: space-between;
-	padding: 2%;
 	align-items: center;
+}
+
+.desktopNav
+{
+	display: none;
 }
 
 .logo
@@ -34,9 +38,16 @@ a,h1,h2,h3,h4,li,p
 	width: 50px;
 	height: 50px;
 	background: #464646;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	
 }
 
+.donate
+{
+	display: none;
+}
 
 .menu
 {
@@ -53,11 +64,8 @@ a,h1,h2,h3,h4,li,p
 
 .promo
 {
-	margin-top: 80px;
 	display: flex; 
-	align-items: center;
-
-	
+	align-items: center;	
 }
 .promo h3
 {
@@ -65,15 +73,15 @@ a,h1,h2,h3,h4,li,p
 	font-size: 5vw;
 	text-align: right;
 	position: relative;
-	left: 11vw;
+	left: 10vw;
 	font-weight: 800;
 }
 .promo span
 {
 	background: white;
-	padding: 10% 1px;
+	padding: 10vw 1px;
 	position: relative;
-	left: 50vw;
+	left: 49vw;
 }
 .promo p
 {
@@ -81,11 +89,25 @@ a,h1,h2,h3,h4,li,p
 	flex-wrap: wrap;
 	padding-left: 5%;
 	position: relative;
-	left: 5vw;
+	left: 4vw;
 	font-weight: 200;
 }
 
+.slider
+{
+	display: flex;
+	justify-content: center;
 
+}
+
+.slider span
+{
+	background: white;
+	border-radius: 100px;
+	width: 20px;
+	height: 20px;
+	margin: 40px 10px;
+}
 
 .paddingSection
 {
@@ -93,7 +115,7 @@ a,h1,h2,h3,h4,li,p
 	
 }
 
-.promoText h1
+.promoText h2
 {
 	color: #2BD094;
 	font-size: 30px;
@@ -107,12 +129,14 @@ a,h1,h2,h3,h4,li,p
 		flex-wrap: wrap;
 		display: flex;
 		justify-content: center;
+		max-width: 1200px;
+		margin: 0 auto;
 	}
 
 .box
 {
 	margin: 0 auto;
-	height: 100px;
+	height: 150px;
 	flex: 1 1 300px;
 	background: blue;
 	margin: 20px;
@@ -121,7 +145,7 @@ a,h1,h2,h3,h4,li,p
 	align-items: center;
 	border-radius: 20px;
 	flex-wrap: wrap;
-	max-width: 300px;
+	max-width: 400px;
 }
 
 .bigBox
@@ -144,14 +168,12 @@ a,h1,h2,h3,h4,li,p
 	background: green;
 }
 
-.shop
-{
-	/*overflow: hidden;*/
-}
+
 .productSection
 {
 	display: flex;
-	position: relative;
+	flex-direction: column;
+	align-items: center;
 }
 
 .product
@@ -161,10 +183,15 @@ a,h1,h2,h3,h4,li,p
 	min-width: 300px; 
 	flex: 1 1 auto;
 	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .partnerIcon
 {
+	height: 100px;
+	max-width: 200px;
 	background: red;
 }
 
@@ -178,6 +205,14 @@ footer
 	padding: 40px;
 }
 
+.footer
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 nav li
 {
 	padding: 20px;
@@ -189,6 +224,7 @@ nav li
 	height: 100px;
 	width: 100px;
 	background: white;
+	margin: 0 auto;
 }
 
 .copyRight
@@ -207,21 +243,105 @@ nav li
 	line-height: 15px;
 }
 
-@media screen and (min-width: 600px) {
-	header
+@media screen and (min-width: 800px) {
+	.logo
 	{
-		height: 800px;
+		width: 100px;
+		height: 100px;
 	}
-
+	
 	.bigBox
 	{
 		height: 600px;
 	}
-	.promo
+	
+	nav ul
 	{
-		margin-top: 120px;
+		display: flex;
 	}
 	
-	
+	nav li
+	{
+	padding: 30px;
+	}
 
+	.promoText h1
+	{
+		font-size: 40px;
+	}
+
+	.productSection
+	{
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.product
+	{
+		max-width: 400px;
+		height: 600px;
+	}
+
+}
+
+
+@media screen and (min-width: 1200px) {
+		
+		header
+		{
+			height: 100vh;
+		}
+
+		.desktopNav
+		{
+			display: flex;
+		}
+
+		.promo
+		{
+			
+			margin: 100px 0;
+		}
+		
+
+
+		.slider span
+		{
+			margin: 40px 20px;
+		}
+
+		.donate
+		{
+			display: block;
+			padding: 15px 40px;
+			border-radius: 100px;
+			background: linear-gradient(180deg, rgba(255,194,104,1) 0%, rgba(255,173,52,1) 100%);
+			color: white;
+		}
+
+		.menu
+		{
+			display: none;
+		}
+		
+		footer
+		{
+			display: block;
+			
+		}
+		.footer
+		{
+			flex-direction: row;
+			justify-content: space-between;
+			padding: 0 60px;
+		}
+
+	}
+
+
+@media screen and (min-width: 1500px) {
+	header
+	{
+		height: 100%;
+	}
 }
